@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inmobiliaria - Inicio</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">InmoEjemplo</h1>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="about.html">Nosotros</a>
+        <a href="contact.html">Contacto</a>
+        <a href="admin.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Encuentra la propiedad de tus sueños</h2>
+      <p>Casas, departamentos y locales en venta y alquiler.</p>
+
+      <form id="filterForm" class="filters">
+        <input type="text" id="search" placeholder="Buscar por título o descripción" />
+        <select id="typeFilter">
+          <option value="">Tipo (todos)</option>
+          <option value="Casa">Casa</option>
+          <option value="Departamento">Departamento</option>
+          <option value="Local">Local</option>
+        </select>
+        <select id="operationFilter">
+          <option value="">Venta / Alquiler</option>
+          <option value="Venta">Venta</option>
+          <option value="Alquiler">Alquiler</option>
+        </select>
+        <input type="number" id="minPrice" placeholder="Min $" />
+        <input type="number" id="maxPrice" placeholder="Max $" />
+        <button type="submit">Filtrar</button>
+        <button type="button" id="resetFilters">Limpiar</button>
+      </form>
+    </section>
+
+    <section id="featuredSection">
+      <h3>Propiedades destacadas</h3>
+      <div id="propertiesGrid" class="grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> InmoEjemplo • Tel: +54 9 11 1234 5678 • Email: info@inmoejemplo.com</p>
+    </div>
+  </footer>
+
+  <!-- Modal detalle -->
+  <div id="propertyModal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeModal" class="modal-close">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

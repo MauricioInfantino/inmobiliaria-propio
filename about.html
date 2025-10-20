@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nosotros - InmoEjemplo</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">InmoEjemplo</h1>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="about.html">Nosotros</a>
+        <a href="contact.html">Contacto</a>
+        <a href="admin.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    <h2>Sobre nosotros</h2>
+    <p>Somos una inmobiliaria con años de experiencia en el rubro. Nuestro objetivo es ayudarte a encontrar la mejor propiedad según tu presupuesto y necesidades.</p>
+
+    <h3>Equipo</h3>
+    <div class="team-grid">
+      <div class="card"> <img src="assets/imgs/agent1.jpg" alt="Agente 1"/><h4>María Pérez</h4><p>Corredora inmobiliaria</p></div>
+      <div class="card"> <img src="assets/imgs/agent2.jpg" alt="Agente 2"/><h4>Juan Gómez</h4><p>Asesor comercial</p></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="yearAbout"></span> InmoEjemplo</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('yearAbout').textContent = new Date().getFullYear();</script>
+</body>
+</html>

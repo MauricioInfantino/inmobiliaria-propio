@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Casa con jardín en Palermo",
+    "city": "Buenos Aires",
+    "type": "Casa",
+    "operation": "Venta",
+    "price": 350000,
+    "image": "assets/imgs/house1.jpg",
+    "description": "Hermosa casa con 3 dormitorios, amplio jardín y parrilla. Cerca de transporte."
+  },
+  {
+    "id": 2,
+    "title": "Departamento luminoso en Recoleta",
+    "city": "Buenos Aires",
+    "type": "Departamento",
+    "operation": "Alquiler",
+    "price": 1200,
+    "image": "assets/imgs/house2.jpg",
+    "description": "Departamento 2 ambientes, amoblado, excelente ubicación."
+  },
+  {
+    "id": 3,
+    "title": "Local comercial en zona céntrica",
+    "city": "Córdoba",
+    "type": "Local",
+    "operation": "Venta",
+    "price": 80000,
+    "image": "assets/imgs/house3.jpg",
+    "description": "Local a la calle con vidriera amplia. Ideal para comercio."
+  }
+]

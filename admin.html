@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin - InmoEjemplo</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">InmoEjemplo • Admin</h1>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="about.html">Nosotros</a>
+        <a href="contact.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    <h2>Panel administrativo (demo)</h2>
+    <p>Agregá propiedades localmente. Esto no guarda en servidor — solo en memoria de la página.</p>
+
+    <form id="addPropertyForm" class="admin-form">
+      <input placeholder="Título" id="pTitle" required />
+      <input placeholder="Ciudad" id="pCity" required />
+      <select id="pType"><option>Casa</option><option>Departamento</option><option>Local</option></select>
+      <select id="pOperation"><option>Venta</option><option>Alquiler</option></select>
+      <input type="number" placeholder="Precio" id="pPrice" required />
+      <input placeholder="Imagen URL" id="pImage" />
+      <textarea placeholder="Descripción" id="pDesc"></textarea>
+      <button type="submit">Agregar propiedad</button>
+    </form>
+
+    <div id="adminNotice" class="notice"></div>
+  </main>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>

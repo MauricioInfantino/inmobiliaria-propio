@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto - InmoEjemplo</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">InmoEjemplo</h1>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="about.html">Nosotros</a>
+        <a href="contact.html">Contacto</a>
+        <a href="admin.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    <h2>Contacto</h2>
+    <p>Completá el formulario y te responderemos a la brevedad.</p>
+
+    <form id="contactForm" class="contact-form">
+      <label>Nombre <input type="text" id="contactName" required></label>
+      <label>Email <input type="email" id="contactEmail" required></label>
+      <label>Teléfono <input type="text" id="contactPhone"></label>
+      <label>Mensaje <textarea id="contactMessage" required></textarea></label>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div id="contactResult" class="notice"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="yearContact"></span> InmoEjemplo</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('yearContact').textContent = new Date().getFullYear();
+
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('contactName').value.trim();
+      const email = document.getElementById('contactEmail').value.trim();
+      const message = document.getElementById('contactMessage').value.trim();
+      if(!name || !email || !message){
+        document.getElementById('contactResult').textContent = 'Por favor completá los campos obligatorios.';
+        return;
+      }
+      // simulamos envío
+      document.getElementById('contactResult').textContent = 'Mensaje enviado. Gracias, ' + name + '!';
+      document.getElementById('contactForm').reset();
+    });
+  </script>
+</body>
+</html>
